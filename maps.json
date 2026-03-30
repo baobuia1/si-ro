@@ -1,0 +1,337 @@
+[
+  {
+    "song_name": "Katheryn",
+    "constant": 15.3331,
+    "diff": "Earlene"
+  },
+  {
+    "song_name": "Blankenship",
+    "constant": 13.0943,
+    "diff": "Verna"
+  },
+  {
+    "song_name": "Juarez",
+    "constant": 15.4269,
+    "diff": "Leigh"
+  },
+  {
+    "song_name": "Oneil",
+    "constant": 12.1597,
+    "diff": "Faulkner"
+  },
+  {
+    "song_name": "Samantha",
+    "constant": 13.2872,
+    "diff": "Maureen"
+  },
+  {
+    "song_name": "Roxanne",
+    "constant": 15.5854,
+    "diff": "Martin"
+  },
+  {
+    "song_name": "Bennett",
+    "constant": 15.1766,
+    "diff": "Dudley"
+  },
+  {
+    "song_name": "May",
+    "constant": 12.3791,
+    "diff": "Tamra"
+  },
+  {
+    "song_name": "Kris",
+    "constant": 13.2121,
+    "diff": "Kaitlin"
+  },
+  {
+    "song_name": "Toni",
+    "constant": 15.5468,
+    "diff": "Kaye"
+  },
+  {
+    "song_name": "Allison",
+    "constant": 13.1228,
+    "diff": "Geneva"
+  },
+  {
+    "song_name": "Cervantes",
+    "constant": 15.8642,
+    "diff": "Jimenez"
+  },
+  {
+    "song_name": "Ratliff",
+    "constant": 13.8504,
+    "diff": "Berg"
+  },
+  {
+    "song_name": "Sanford",
+    "constant": 14.1394,
+    "diff": "Jan"
+  },
+  {
+    "song_name": "Barr",
+    "constant": 13.7388,
+    "diff": "Bolton"
+  },
+  {
+    "song_name": "Spencer",
+    "constant": 14.6374,
+    "diff": "Phillips"
+  },
+  {
+    "song_name": "Wood",
+    "constant": 13.5284,
+    "diff": "Abbott"
+  },
+  {
+    "song_name": "Foley",
+    "constant": 12.333,
+    "diff": "Parrish"
+  },
+  {
+    "song_name": "Wilder",
+    "constant": 14.6951,
+    "diff": "Edwards"
+  },
+  {
+    "song_name": "Carson",
+    "constant": 15.8134,
+    "diff": "Suzette"
+  },
+  {
+    "song_name": "Schneider",
+    "constant": 12.9008,
+    "diff": "Callahan"
+  },
+  {
+    "song_name": "Dorsey",
+    "constant": 15.2611,
+    "diff": "Terra"
+  },
+  {
+    "song_name": "Fry",
+    "constant": 15.8973,
+    "diff": "Sophie"
+  },
+  {
+    "song_name": "Carol",
+    "constant": 15.4141,
+    "diff": "Reba"
+  },
+  {
+    "song_name": "Douglas",
+    "constant": 13.3019,
+    "diff": "Rosie"
+  },
+  {
+    "song_name": "Gallegos",
+    "constant": 12.4164,
+    "diff": "Whitney"
+  },
+  {
+    "song_name": "Bentley",
+    "constant": 13.1598,
+    "diff": "Marguerite"
+  },
+  {
+    "song_name": "Karla",
+    "constant": 13.7403,
+    "diff": "Annabelle"
+  },
+  {
+    "song_name": "Roy",
+    "constant": 14.3191,
+    "diff": "Raymond"
+  },
+  {
+    "song_name": "Good",
+    "constant": 15.8117,
+    "diff": "Candace"
+  },
+  {
+    "song_name": "Tammie",
+    "constant": 12.732,
+    "diff": "Anderson"
+  },
+  {
+    "song_name": "Regina",
+    "constant": 13.467,
+    "diff": "Amanda"
+  },
+  {
+    "song_name": "Cathleen",
+    "constant": 14.8883,
+    "diff": "Fran"
+  },
+  {
+    "song_name": "Isabelle",
+    "constant": 12.2589,
+    "diff": "Bowers"
+  },
+  {
+    "song_name": "Owen",
+    "constant": 15.7093,
+    "diff": "Gibson"
+  },
+  {
+    "song_name": "Byrd",
+    "constant": 15.1678,
+    "diff": "Marcie"
+  },
+  {
+    "song_name": "Davis",
+    "constant": 13.9585,
+    "diff": "Kasey"
+  },
+  {
+    "song_name": "Doris",
+    "constant": 14.3205,
+    "diff": "Hurley"
+  },
+  {
+    "song_name": "Miranda",
+    "constant": 15.7895,
+    "diff": "Gamble"
+  },
+  {
+    "song_name": "Farrell",
+    "constant": 14.1845,
+    "diff": "Brooke"
+  },
+  {
+    "song_name": "Cabrera",
+    "constant": 14.4777,
+    "diff": "Sadie"
+  },
+  {
+    "song_name": "Lee",
+    "constant": 14.5865,
+    "diff": "Aimee"
+  },
+  {
+    "song_name": "Moran",
+    "constant": 12.8602,
+    "diff": "Richmond"
+  },
+  {
+    "song_name": "Sparks",
+    "constant": 13.4203,
+    "diff": "May"
+  },
+  {
+    "song_name": "Mathews",
+    "constant": 13.0443,
+    "diff": "Aida"
+  },
+  {
+    "song_name": "York",
+    "constant": 12.2926,
+    "diff": "Lester"
+  },
+  {
+    "song_name": "Dale",
+    "constant": 14.9171,
+    "diff": "Zimmerman"
+  },
+  {
+    "song_name": "Patterson",
+    "constant": 13.7588,
+    "diff": "Wall"
+  },
+  {
+    "song_name": "Nguyen",
+    "constant": 13.9167,
+    "diff": "Leticia"
+  },
+  {
+    "song_name": "Betty",
+    "constant": 12.938,
+    "diff": "Cunningham"
+  },
+  {
+    "song_name": "Deirdre",
+    "constant": 13.2781,
+    "diff": "Mullins"
+  },
+  {
+    "song_name": "Wong",
+    "constant": 13.1278,
+    "diff": "Leann"
+  },
+  {
+    "song_name": "Brandi",
+    "constant": 13.7073,
+    "diff": "Beverley"
+  },
+  {
+    "song_name": "Angeline",
+    "constant": 13.1256,
+    "diff": "Ina"
+  },
+  {
+    "song_name": "Shannon",
+    "constant": 13.5165,
+    "diff": "Thompson"
+  },
+  {
+    "song_name": "Nunez",
+    "constant": 15.3842,
+    "diff": "Evelyn"
+  },
+  {
+    "song_name": "Hunter",
+    "constant": 15.6144,
+    "diff": "Mccarty"
+  },
+  {
+    "song_name": "Molly",
+    "constant": 15.7183,
+    "diff": "Rose"
+  },
+  {
+    "song_name": "Ollie",
+    "constant": 12.8008,
+    "diff": "Juana"
+  },
+  {
+    "song_name": "Benita",
+    "constant": 13.3864,
+    "diff": "Angelina"
+  },
+  {
+    "song_name": "Freeman",
+    "constant": 13.5423,
+    "diff": "Fernandez"
+  },
+  {
+    "song_name": "Amalia",
+    "constant": 12.9336,
+    "diff": "Garza"
+  },
+  {
+    "song_name": "Madge",
+    "constant": 12.2218,
+    "diff": "Allen"
+  },
+  {
+    "song_name": "Mendoza",
+    "constant": 13.9719,
+    "diff": "Gay"
+  },
+  {
+    "song_name": "Levy",
+    "constant": 13.9198,
+    "diff": "Molina"
+  },
+  {
+    "song_name": "Summers",
+    "constant": 13.5017,
+    "diff": "English"
+  },
+  {
+    "song_name": "Caitlin",
+    "constant": 14.8322,
+    "diff": "Garrison"
+  }
+]
