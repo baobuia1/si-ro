@@ -15,7 +15,8 @@ class deletion_view(discord.ui.View):
     @discord.ui.button(label='Cancel ❌')
     async def cancel_deletion(self,button,interaction):
         embed = discord.Embed(description='Cancelled deletion')
-        await interaction.respond(embed)
+        self.disable_all_items()
+        await interaction.response.edit_message(view=self)
 
 
 
@@ -98,8 +99,7 @@ class tourney(commands.Cog, name='Tourney Commands',guild_ids=[14849258348496814
                 chosen_maps = random.sample(qualified,k=num)
                 maps = []
                 for index,chosen_map in enumerate(chosen_maps):
-                    maps.append(discord.Embed(title=f'Map number {index+1}',description=f'{chosen_map['song_name']}[{chosen_map['diff']}]\nConstant: {chosen_map['constant']}'))
-                    msg += f'{index+1}. {chosen_map['song_name']} [{chosen_map['diff']}] - {chosen_map['constant']}\n'
+                    maps.append(discord.Embed(title=f'Map number {index+1}',description=f'{chosen_map['song_name']} [{chosen_map['diff']} {chosen_map['constant']}]'))
                 await ctx.respond(embeds=maps)
 
                 #data handling
@@ -127,7 +127,7 @@ class tourney(commands.Cog, name='Tourney Commands',guild_ids=[14849258348496814
                     else:
                         channel['banned'].append(map)
                         chosen_map = channel['maps'][map]
-                        await ctx.respond(embed=discord.Embed(description=f'`{map+1}. {chosen_map['song_name']} [{chosen_map['diff']}]` has been banned.'))
+                        await ctx.respond(embed=discord.Embed(description=f'`{map+1}.` {chosen_map['song_name']} [{chosen_map['diff']}] has been banned.'))
         
         with open('./data.json','w',encoding='utf-8') as f:
             json.dump(data,f)
@@ -150,7 +150,7 @@ class tourney(commands.Cog, name='Tourney Commands',guild_ids=[14849258348496814
                     else:
                         channel['picked'].append(map)
                         chosen_map = channel['maps'][map]
-                        await ctx.respond(embed=discord.Embed(description=f'`{map+1}. {chosen_map['song_name']} [{chosen_map['diff']}]` has been banned'))
+                        await ctx.respond(embed=discord.Embed(description=f'`{map+1}.` {chosen_map['song_name']} [{chosen_map['diff']}] has been picked'))
         
         with open('./data.json','w',encoding='utf-8') as f:
             json.dump(data,f)
@@ -165,16 +165,14 @@ class tourney(commands.Cog, name='Tourney Commands',guild_ids=[14849258348496814
             data = json.load(f)
             for channel in data:
                 if channel['channel_id'] == ctx.channel_id:
-                    msg = '```'
                     maps = []
                     for index,chosen_map in enumerate(channel['maps']):
-                        #msg += f'{index+1}. {chosen_map['song_artist']} - {chosen_map['song_name']}[{chosen_map['diff']}] - {chosen_map['constant']}\n'
                         if index not in channel['banned'] and index not in channel['picked']:
-                            maps.append(discord.Embed(title=f'Map number {index+1}',description=f'{chosen_map['song_name']}[{chosen_map['diff']}]\nConstant: {chosen_map['constant']}'))
+                            maps.append(discord.Embed(title=f'Map number {index+1}',description=f'{chosen_map['song_name']} [{chosen_map['diff']} {chosen_map['constant']}]'))
                         elif index in channel['picked']:
-                            maps.append(discord.Embed(color=discord.Color.red(),title=f'Map number {index+1} PICKED',description=f'~~{chosen_map['song_name']}[{chosen_map['diff']}]\nConstant: {chosen_map['constant']}~~'))
+                            maps.append(discord.Embed(color=discord.Color.red(),title=f'Map number {index+1} PICKED',description=f'~~{chosen_map['song_name']} [{chosen_map['diff']} {chosen_map['constant']}]~~'))
                         elif index in channel['banned']:
-                            maps.append(discord.Embed(color=discord.Color.red(),title=f'Map number {index+1} BANNED',description=f'~~{chosen_map['song_name']}[{chosen_map['diff']}]\nConstant: {chosen_map['constant']}~~'))
+                            maps.append(discord.Embed(color=discord.Color.red(),title=f'Map number {index+1} BANNED',description=f'~~{chosen_map['song_name']} [{chosen_map['diff']} {chosen_map['constant']}]~~'))
                     await ctx.respond(embeds=maps)
 
 
@@ -190,6 +188,7 @@ class tourney(commands.Cog, name='Tourney Commands',guild_ids=[14849258348496814
                     channel['created'].append(ref.id)
         with open('./data.json','w',encoding='utf-8') as f:
             json.dump(data,f)
+        await ctx.respond(f'Added {ref.mention}')
 
 
     @commands.slash_command(
@@ -204,6 +203,7 @@ class tourney(commands.Cog, name='Tourney Commands',guild_ids=[14849258348496814
                     channel['created'].remove(ref.id)
         with open('./data.json','w',encoding='utf-8') as f:
             json.dump(data,f)
+        await ctx.respond(f'Removed {ref.mention}')
 
 def setup(bot):
     bot.add_cog(tourney(bot))

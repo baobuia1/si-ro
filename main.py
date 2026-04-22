@@ -33,7 +33,7 @@ class dev(commands.Cog, name='Developer Commands',guild_ids=[1484925834849681489
         name='reload',
         aliases=['rl']
     )  
-    async def reload(self, ctx, cog):
+    async def reload(self, ctx, cog=all):
         '''
         Reloads a cog.
         '''
